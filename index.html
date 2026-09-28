@@ -81,6 +81,12 @@ td:first-child { white-space:nowrap; font-weight:600; }
 .checklist li { break-inside:avoid; margin-bottom:8px; }
 .credit { color:var(--muted); font-size:14px; margin-top:48px; border-top:1px solid var(--rule); padding-top:16px; }
 a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; border-radius:4px; }
+.docbar { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:10px 16px; border-radius:999px; font-weight:700; font-size:15px; text-decoration:none; border:1px solid var(--accent); }
+.btn.solid { background:var(--accent); color:var(--paper); }
+.btn.line { color:var(--accent); background:transparent; }
+.btn:hover { filter:brightness(1.08); }
+nav a.doc { color:var(--accent); }
 @media (max-width:760px) {
   body { font-size:16px; }
   .dest-head, .body, .base { grid-template-columns:1fr; }
@@ -95,12 +101,13 @@ a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; border-ra
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
 </style>
 </head><body>
-<nav><div class="in"><a href="#overview">Overview</a><a href="#nl">Netherlands</a><a href="#sc">Scotland</a><a href="#bcn">Barcelona</a><a href="#book">Before you book</a></div></nav>
+<nav><div class="in"><a href="#overview">Overview</a><a href="#nl">Netherlands</a><a href="#sc">Scotland</a><a href="#bcn">Barcelona</a><a href="#book">Before you book</a><a class="doc" href="Mom_and_Dad_Europe_2027.docx" download>Word itinerary ↓</a></div></nav>
 <div class="wrap">
 <header class="cover" id="overview">
   <p class="kicker">Mom &amp; Dad · UK and Europe</p>
   <h1>29 April – 1 June 2027</h1>
   <p class="sub">Five weeks from a Bristol base: tulips in the Netherlands, the Highlands and Skye, and Gaudí's Barcelona. No car on any leg.</p>
+  <div class="docbar"><a class="btn solid" href="Mom_and_Dad_Europe_2027.docx" download>Download Word itinerary</a><a class="btn line" href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fbrianskcheng.github.io%2Fjoyce-family-europe-trip-2027%2FMom_and_Dad_Europe_2027.docx" target="_blank" rel="noopener">View it online</a></div>
   <div class="cover-strip">
     <figure class="ph big"><a href="https://commons.wikimedia.org/wiki/File:Rows_of_tulips_and_trees_at_Keukenhof_gardens.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Rows_of_tulips_and_trees_at_Keukenhof_gardens.jpg/960px-Rows_of_tulips_and_trees_at_Keukenhof_gardens.jpg" alt="Keukenhof" loading="lazy" referrerpolicy="no-referrer" data-orig="https://upload.wikimedia.org/wikipedia/commons/3/34/Rows_of_tulips_and_trees_at_Keukenhof_gardens.jpg" onerror="if(this.dataset.orig&&this.src!==this.dataset.orig){this.src=this.dataset.orig}else{this.closest('figure').classList.add('miss')}"></a><span class="miss-note"><a href="https://commons.wikimedia.org/wiki/File:Rows_of_tulips_and_trees_at_Keukenhof_gardens.jpg" target="_blank" rel="noopener">View photo: Keukenhof</a></span><figcaption>Keukenhof</figcaption></figure>
     <figure class="ph"><a href="https://commons.wikimedia.org/wiki/File:Eilean_Donan_Castle.jpg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Eilean_Donan_Castle.jpg/960px-Eilean_Donan_Castle.jpg" alt="Eilean Donan" loading="lazy" referrerpolicy="no-referrer" data-orig="https://upload.wikimedia.org/wikipedia/commons/c/c7/Eilean_Donan_Castle.jpg" onerror="if(this.dataset.orig&&this.src!==this.dataset.orig){this.src=this.dataset.orig}else{this.closest('figure').classList.add('miss')}"></a><span class="miss-note"><a href="https://commons.wikimedia.org/wiki/File:Eilean_Donan_Castle.jpg" target="_blank" rel="noopener">View photo: Eilean Donan</a></span><figcaption>Eilean Donan</figcaption></figure>
