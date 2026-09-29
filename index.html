@@ -50,7 +50,7 @@ td:first-child { white-space:nowrap; font-weight:600; }
 #sc .kicker { color:var(--sc); } #bcn .kicker { color:var(--bcn); } #nl .kicker { color:var(--nl); }
 .intro { color:var(--muted); margin:0; max-width:52ch; }
 .ph { margin:0; position:relative; min-width:0; }
-.ph img { display:block; width:100%; max-width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:10px; background:var(--soft); }
+.ph img { display:block; width:100%; max-width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; border-radius:10px; background:var(--soft); }
 .ph.big img { aspect-ratio:16/10; }
 .ph figcaption { font-size:13px; color:var(--muted); margin-top:5px; }
 .ph .miss-note { display:none; }
@@ -89,6 +89,8 @@ a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; border-ra
 nav a.doc { color:var(--accent); }
 @media (max-width:760px) {
   body { font-size:16px; }
+  nav .in { flex-wrap:nowrap; overflow-x:auto; white-space:nowrap; gap:16px; padding:10px 16px; scrollbar-width:none; }
+  nav .in::-webkit-scrollbar { display:none; }
   .dest-head, .body, .base { grid-template-columns:1fr; }
   .gallery.g3, .gallery.g4 { grid-template-columns:1fr 1fr; }
   .gallery.g3 .big { grid-column:1 / -1; }
